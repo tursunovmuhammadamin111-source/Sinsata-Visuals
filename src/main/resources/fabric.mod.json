@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "sinsatavisuals",
+  "version": "${version}",
+  "name": "Sinsata Visuals",
+  "description": "Minecraft uchun estetik vizual yaxshilanishlar va FPS optimizatsiyasi to'plami. Hech qanday cheat/hack funksiyasi mavjud emas.",
+  "authors": [
+    "Siz"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/sinsatavisuals/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "uz.sinsata.visuals.SinsataVisualsClient"
+    ]
+  },
+  "mixins": [
+    "sinsatavisuals.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
