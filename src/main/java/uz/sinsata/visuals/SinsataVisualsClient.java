@@ -34,7 +34,8 @@ public class SinsataVisualsClient implements ClientModInitializer {
                 "key.sinsatavisuals.open_menu",
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_RIGHT_SHIFT,
-                "category.sinsatavisuals.general"
+                net.minecraft.client.option.KeyBinding.Category.create(
+                        net.minecraft.util.Identifier.of("sinsatavisuals", "general"))
         ));
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
