@@ -85,7 +85,6 @@ public class SinsataVisualsScreen extends Screen {
 
     @Override
     public void render(net.minecraft.client.gui.DrawContext context, int mouseX, int mouseY, float delta) {
-        this.renderBackground(context, mouseX, mouseY, delta);
         super.render(context, mouseX, mouseY, delta);
         context.drawCenteredTextWithShadow(this.textRenderer,
                 Text.literal("Sinsata Visuals"), this.width / 2, 15, 0xFFFFFF);
